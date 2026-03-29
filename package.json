@@ -1,0 +1,30 @@
+{
+  "name": "cmspid",
+  "version": "1.0.0",
+  "description": "Creative Managed Serialized Pseudo-Identifier - A UUID-styled reversible encoder.",
+  "main": "src/index.js",
+  "browser": "dist/cmspid.min.js",
+  "scripts": {
+    "build": "terser src/index.js -o dist/cmspid.min.js --compress --mangle --comments /license/",
+    "test": "jest",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "cmspid",
+    "uuid",
+    "encoding",
+    "base64",
+    "serialization",
+    "pseudo-id"
+  ],
+  "author": "JuniorSchueller",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuniorSchueller/cmspid.git"
+  },
+  "devDependencies": {
+    "terser": "^5.19.2",
+    "jest": "^30.3.0"
+  }
+}
